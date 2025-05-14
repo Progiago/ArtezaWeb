@@ -35,7 +35,7 @@ APPS = [
 ]
 
 DJANGO_APPS = [
-    'django.contrib.admin',
+    # 'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -78,7 +78,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Artezaweb.wsgi.application'
 
-
+AUTH_USER_MODEL = "usuario.Usuario"
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
@@ -114,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'Americas/Fortaleza'
+TIME_ZONE = 'America/Fortaleza'
 
 USE_I18N = True
 

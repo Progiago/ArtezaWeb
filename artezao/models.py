@@ -16,4 +16,5 @@ class Artezao(AbstractBaseUser):
     pais = models.CharField(verbose_name="Pais", max_length=50)
     cidade = models.CharField(verbose_name="Cidade", max_length=50)
     cep = models.CharField(verbose_name='CEP', max_length=30)
+    endereco = models.CharField(verbose_name='Endereço', max_length=255)
     

@@ -33,6 +33,10 @@ ALLOWED_HOSTS = []
 APPS = [
     'usuario',
     'artezao',
+    'carrinho',
+    'produto',
+    'categoria',
+    'pagamentos',
 ]
 
 DJANGO_APPS = [

@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser
 from time import timezone
-from .manager import CustomUserManager
 # Create your models here.
 
 
@@ -28,9 +27,7 @@ class Usuario(AbstractBaseUser):
     cep = models.CharField(verbose_name="CEP", max_length=30)
     endereco = models.CharField(verbose_name="Endereço", max_length=60)
     
-    objects = CustomUserManager()
     USERNAME_FIELD = "email"
     
     def __str__(self):
         return self.email
-    

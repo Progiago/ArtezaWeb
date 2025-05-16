@@ -6,7 +6,7 @@ from rest_framework import viewsets, serializers
 class UsuarioSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Usuario
-        fields = ['url', 'username', 'email', 'is_staff']
+        fields = '__all__'
 
 
 # ViewSets define the view behavior.
